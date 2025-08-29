@@ -895,7 +895,7 @@ body {
     text-align: center;
     line-height: 1.5;
     letter-spacing: 5px;
-    transform: rotate(-5deg);
+    transform: rotate(-1deg);
     text-shadow: 0 0 5px white,
                 0 0 10px white;
 }
