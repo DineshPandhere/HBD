@@ -70,7 +70,7 @@ body {
     width: 40%;
 }
 .content .right{
-    width: 60%;
+    width: 50%;
 }
 .left .btn{
     transform: scale(0);
@@ -163,9 +163,9 @@ body {
 }
 
 .title .hat{
-    position: absolute;
-    right: 45px;
-    top: -350px;
+    position: relative;
+    right: -500px;
+    top:-640px;
     transform: rotate(-40deg);
     z-index: -1;
     animation: topHat 4s 7s forwards ease;
@@ -244,7 +244,8 @@ body {
 .right .box__account{
     position: relative;
     transform: translateY(700px);
-    animation: topBoxImage 8s 7s forwards ease-in;
+    animation: topBoxImage 3s 4s forwards ease-in;
+    padding:60px 0 30px 0;
 }
 @keyframes topBoxImage{
     to{
@@ -355,7 +356,7 @@ body {
 .right .balloon_two{
     position: absolute;
     top: 170px;
-    right: -65px;
+    right: -75px;
     z-index: -1;
     transform: rotate(10deg);
     animation: balloon2 2s infinite linear;
@@ -448,11 +449,11 @@ body {
     animation: scaleCricle 3s var(--t) forwards ease-in-out;
 }
 .smiley__icon{
-    position: absolute;
-    bottom: 180px;
-    left: 600px;
+    position: relative;
+    bottom: 10px;
+    left: auto;
     transform: scale(0);
-    animation: scaleCricle 3s 15s forwards ease-in-out;
+    animation: scaleCricle 3s 5s forwards ease-in-out;
 }
 
 
@@ -680,7 +681,7 @@ body {
         justify-content: center;
         cursor: pointer;
         z-index: 2;
-        /* transform: scale(1); */
+        transform: scale(1);
         transition: all .5s ease-in-out;
     }
 
@@ -775,13 +776,15 @@ body {
 
     .name {
         position: absolute;
-        padding: 0px 3px;
+        padding: 1px 3px 1px 3px;
         bottom: -6px;
         border: 3px solid var(--color-black);
     }
 
     .name span {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        white-space: nowrap;
+        padding: auto;
     }
 
     .right .balloon_one {
@@ -1035,3 +1038,12 @@ body {
     bottom: 20px;
     left: 50%;
 }
+
+#HBD{
+    width: 100%;
+    height: 100%;
+    padding: 19% 20px 0;
+    margin: auto;
+    position: relative;
+}
+
