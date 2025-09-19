@@ -36,7 +36,7 @@ body {
     z-index: 1;
 }
 .flag__birthday{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-between;
     transform: translateY(-200px);
@@ -70,7 +70,7 @@ body {
     width: 40%;
 }
 .content .right{
-    width: 50%;
+    width: 60%;
 }
 .left .btn{
     transform: scale(0);
@@ -163,9 +163,9 @@ body {
 }
 
 .title .hat{
-    position: relative;
-    right: -500px;
-    top:-640px;
+    position: absolute;
+    right: 45px;
+    top: -350px;
     transform: rotate(-40deg);
     z-index: -1;
     animation: topHat 4s 7s forwards ease;
@@ -244,8 +244,7 @@ body {
 .right .box__account{
     position: relative;
     transform: translateY(700px);
-    animation: topBoxImage 3s 4s forwards ease-in;
-    padding:60px 0 30px 0;
+    animation: topBoxImage 8s 7s forwards ease-in;
 }
 @keyframes topBoxImage{
     to{
@@ -263,9 +262,9 @@ body {
     border: 6px solid var(--color-black);
 }
 .content .right .image img{
-    width: 100%;
+    width: 108%;
     object-fit: cover;
-
+    padding-bottom: 33px;
 }
 .cricle{
     position: absolute;
@@ -356,7 +355,7 @@ body {
 .right .balloon_two{
     position: absolute;
     top: 170px;
-    right: -75px;
+    right: -65px;
     z-index: -1;
     transform: rotate(10deg);
     animation: balloon2 2s infinite linear;
@@ -393,8 +392,8 @@ body {
 .decorate_star.star2{
     width: 15px;
     height: 20px;
-    top: 35px;
-    right: 360px;
+    top: 18px;
+    right: 334px;
 }
 .decorate_star.star3{
     width: 14px;
@@ -426,34 +425,15 @@ body {
     position: absolute;
     right: 0;
     bottom: -10px;
+    opacity: 20%;
 }
-.decorate_flower--one{
-    position: absolute;
-    top: 183px;
-    left: 21px;
-    transform: scale(0);
-    animation: scaleCricle 3s var(--t) forwards ease-in-out;
-}
-.decorate_flower--two{
-    position: absolute;
-    top: 225px;
-    left: 540px;
-    transform: scale(0);
-    animation: scaleCricle 3s var(--t) forwards ease-in-out;
-}
-.decorate_flower--three{
-    position: absolute;
-    top: 150px;
-    right: 235px;
-    transform: scale(0);
-    animation: scaleCricle 3s var(--t) forwards ease-in-out;
-}
+
 .smiley__icon{
-    position: relative;
-    bottom: 227px;
-    left: 8px;
+    position: absolute;
+    bottom: 69px;
+    left: 7px;
     transform: scale(0);
-    animation: scaleCricle 3s 5s forwards ease-in-out;
+    animation: scaleCricle 3s 15s forwards ease-in-out;
 }
 
 
@@ -648,9 +628,9 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 2px;
+        gap: 25px;
         align-items: center;
-        padding-top: 8rem;
+        padding-top: 4rem;
     }
 
     .title {
@@ -681,14 +661,14 @@ body {
         justify-content: center;
         cursor: pointer;
         z-index: 2;
-        transform: scale(1);
+        /* transform: scale(1); */
         transition: all .5s ease-in-out;
     }
 
     .cricle {
         position: absolute;
-        top: 10px;
-        right: -54px;
+        top: -5px;
+        right: -58px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -698,8 +678,8 @@ body {
 
     .title .hat {
         position: absolute;
-        right: -98px;
-        top: -51px !important;
+        right: -50px;
+        top: -46px !important;
         transform: rotate(-40deg);
         z-index: -1;
         animation: topHat 4s 7s forwards ease;
@@ -770,21 +750,22 @@ body {
         border-radius: 50%;
         overflow: hidden;
         display: flex;
+        margin-bottom: -4px;
         align-items: center;
         border: 6px solid var(--color-black);
     }
 
     .name {
         position: absolute;
-        padding: 1px 3px 1px 3px;
+        padding: 0px 3px;
         bottom: -6px;
         border: 3px solid var(--color-black);
     }
 
     .name span {
-        font-size: 1.1rem;
-        white-space: nowrap;
-        padding: auto;
+        font-size: 1rem;
+        font-weight: bold;
+        color:rgb(255, 255, 255)
     }
 
     .right .balloon_one {
@@ -935,7 +916,7 @@ body {
     text-shadow: 0 0 8px #ff78815d;
 }
 .boxMail .boxMail-container .card2:hover h3{
-    animation: texth3 3s forwards;
+    animation: texth3 2s forwards;
     animation-delay: 2s;
     transition: 1s;
 }
@@ -953,14 +934,14 @@ body {
 }
 .boxMail .boxMail-container .card2 h2{
     font-family: 'Dancing Script', cursive;
-    padding: 0px 20px;
-    text-indent: 20px;
-    font-size: 22px;
+    padding: 0px 30px;
+    text-indent: 22px;
+    font-size: 21px;
     opacity: 0;
 }
 .boxMail .boxMail-container .card2:hover h2{
     animation: texth2 2s forwards;
-    animation-delay: 4s;
+    animation-delay: 2s;
     transition: 1s;
 }
 @keyframes texth2{
@@ -980,7 +961,7 @@ body {
 }
 .boxMail .boxMail-container .card2 .card2-content:hover .imageCute2{
     animation: cute3 1s linear infinite,
-                cute4 3s 2s forwards;
+                cute4 1s 2s forwards;
     animation-delay: 2s;
     transition: 1s;
 }
@@ -1028,22 +1009,19 @@ body {
     z-index: 10000000000000000;
 }
 
+.HBD{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
 
 #Tap{
-    color: red
+    color: red;
     align-items: center;
     justify-content: center;
     font-size: 20px;
     position: fixed;
     bottom: 20px;
     left: 50%;
-}
-
-#HBD{
-    width: 90%;
-    height: 100%;
-    padding: -1px;
-    margin: auto;
-    position: relative;
 }
 
